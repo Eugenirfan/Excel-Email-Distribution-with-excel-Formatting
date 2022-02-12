@@ -36,7 +36,7 @@ df['PO Create Date'] = pd.to_datetime(df['PO Create Date']).dt.normalize()
 #groupy by supplier name
 for period, data in df.groupby('supplier_name'):
     #print(data['Description'])
-    output_path= os.path.join(r'S:\Matmgmt\Irfan\python projects\Upcoming\XSNM\XSNM by Name', period +'.xlsx')
+    output_path= os.path.join(r'C:\Irfan\python projects\Upcoming\XSNM\XSNM by Name', period +'.xlsx')
     data.to_excel(output_path,index=False)
     
     #Creating a workbook and worksheet object for formatting
