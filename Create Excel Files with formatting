@@ -12,7 +12,7 @@ from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule, Ru
 from openpyxl.styles.differential import DifferentialStyle
 
 #read excel
-df = pd.read_excel(r'C:\Users\mohamedirfan.suffeer','Raw Data')
+df = pd.read_excel(r'C:\Users\mohamedirfan','Raw Data')
 
 #add filter
 df = df.loc[df['Approved/Rejected/ No Response/WIP'].isin(['Needs Action','Net New'])]
